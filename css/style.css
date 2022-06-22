@@ -72,7 +72,7 @@ body {
   padding: 10px;
 }
 
-.header .campain a {
+.header .campaign a {
   color: var(--red);
 }
 
@@ -85,13 +85,16 @@ body {
 .headline h1 {
   color: var(--red);
   font-size: 24px;
-  line-height: 24px;
+  line-height: 2;
+  font-weight: lighter;
 }
 
 .headline #title {
   text-transform: uppercase;
-  color: var(--blueish);
+  color: var(--red);
   margin-top: 20px;
+  font-size: 30px;
+  font-weight: 900;
 }
 
 .headline .head-description {
@@ -197,16 +200,47 @@ body {
 }
 
 .partners {
-    background:var(--black);
-    height: 200px;
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  text-align: center;
+  background: var(--black);
+  height: 200px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.partners .our-partners {
+  color: var(--white);
+  font-size: 24px;
+}
+
+.partners h2 {
+  color: var(--white);
+  font-size: 22px;
+  font-weight: bolder;
+  margin-bottom: 40px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  background: var(--white);
+  width: 100%;
+  height: 100px;
+}
+
+footer img {
+  height: 40px;
+  margin-top: 20px;
 }
 
 @media screen and (min-width: 768px) {
+  .navbar i {
+    display: none;
+  }
+
   .programs {
     display: flex;
     flex-direction: row;
@@ -215,7 +249,7 @@ body {
   }
 
   .header .navbar {
-    display: block;
+    display: flex;
   }
 
   .header .logo,
