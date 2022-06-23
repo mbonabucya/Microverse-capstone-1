@@ -1,6 +1,24 @@
 const speakerSection = document.querySelector('.speaker');
 const section = document.createElement('div');
 speakerSection.appendChild(section);
+const hamburger = document.querySelector('#menu');
+const navmenu = document.querySelector('.mobile-menu');
+const closeMenu = document.querySelector('#closeMenu');
+// const home = document.querySelector('#nav-item1');
+// const about = document.querySelector('#nav-item2');
+function show() {
+  navmenu.style.visibility = 'visible';
+  navmenu.style.top = '0';
+  navmenu.style.left = '0';
+  navmenu.style.position = 'fixed';
+  navmenu.style.width = '100%';
+  navmenu.style.height = '100vh';
+}
+function close() {
+  navmenu.style.top = '-100%';
+}
+hamburger.addEventListener('click', show);
+closeMenu.addEventListener('click', close);
 
 const speaker = [
   {

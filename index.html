@@ -34,15 +34,21 @@
     <header class="header">
       <div class="icons">
         <div class="fa fa-bars" id="menu">
-
         </div>
-        <i class="fa fa-times" id="closeMenu"></i>
       </div>
+      <nav class="mobile-menu">
+        <i class="fa fa-times" id="closeMenu"></i>
+        <a href="about.html" class="nav-link" id="nav-item1">about</a>
+        <a href="#program" class="nav-link">program</a>
+        <a href="#join" class="nav-link">join</a>
+        <a href="#sponsor" class="nav-link">sponsor</a>
+        <a href="#news" class="nav-link">news</a>
+      </nav>
+
       <a href="index.html" class="logo"
         ><img src="images/logo.png" alt="chogm-logo"
       /></a>
       <nav class="navbar">
-       
         <a href="about.html" class="nav-link">about</a>
         <a href="#program" class="nav-link">program</a>
         <a href="#join" class="nav-link">join</a>
@@ -55,7 +61,7 @@
     </header>
     <section class="headline">
       <h1>"Hello! Sharing the world"</h1>
-      <p id="title">Commonwealth Heads of Government Meeting 2022 (CHOGM)</p>
+      <p id="title">Rwanda CHOGM 2022</p>
       <div class="head-description">
         <p>
           Leaders of Commonwealth countries meet every two years for the
@@ -71,9 +77,9 @@
     </section>
     <section class="main-program">
       <div>
-        <h2>Main Program</h2>
+        <h2>Program</h2>
       </div>
-
+      <span class="underline"></span>
       <div class="programs">
         <div class="program-card">
           <img src="images/youth.jpg" alt="youth" />
@@ -120,9 +126,15 @@
         </div>
       </div>
     </section>
-    <section class="speaker"></section>
+    <div class="speaker">
+      <h2>Featured speaker</h2>
+      <span class="underline"></span>
+    </div>
     <section class="partners">
-      <h2> Partner</h2>
+      <div>
+        <h2> Partner</h2>
+      </div>
+      <span class="underline"></span>
       <div class="container">
         <div class="row">
           <div class="col-3 our-partners">Unicef</div>
@@ -151,7 +163,7 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
-  </body>
+
   <footer class="footer">
     <div class="container">
       <div class="row">
@@ -159,9 +171,15 @@
           <img src="images/logo.png" alt="logo-footer" />
         </div>
         <div class="col-sm-6">
-          <p>CHOGM Rwanda 2002 Some rights are reserved</p>
+          <div class="row footer-p">
+            <p>
+            CHOGM Rwanda 2002 Some rights are reserved <br/>
+            달리 정하지 않은 웹 사이트 의 모든 내용 은 크리에이티브 커먼즈 저작자 표시 2.0
+             대한민국 라이선스 에 따라 이용할 수 있습니다 . 자세한 이용 기능 내용 과 허락 조건 은 http://eduport.org/licences/by/2.0/kr 를 보세요 .</p>
+          </div>
         </div>
       </div>
     </div>
   </footer>
+</body>
 </html>

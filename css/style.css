@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
 
 :root {
   --main-color: #272a31;
@@ -10,7 +10,7 @@
 }
 
 * {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   box-sizing: border-box;
   text-decoration: none;
   text-transform: capitalize;
@@ -29,11 +29,36 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
+  padding-left: 10px;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  height: 40px;
+}
+
+.mobile-menu {
+  background: var(--blueish);
+  visibility: hidden;
+}
+
+.mobile-menu a {
+  color: var(--white);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#closeMenu {
+  color: var(--white);
+  font-size: 24px;
+  margin-left: 300px;
+  margin-top: 30px;
+  margin-right: 40px;
+}
+
+.program-card img {
+  height: 96px;
+  width: 90px;
 }
 
 .header .logo img {
@@ -46,9 +71,14 @@ body {
   color: var(--main-color);
 }
 
+.header .campaign a {
+  color: var(--red);
+}
+
 .header .navbar a:hover {
   color: var(--red);
   border-bottom: 1px solid var(--main-color);
+  text-decoration: none;
 }
 
 .header .navbar a:active {
@@ -70,10 +100,6 @@ body {
   font-size: 20px;
   border: 3px solid var(--red);
   padding: 10px;
-}
-
-.header .campaign a {
-  color: var(--red);
 }
 
 .headline {
@@ -103,6 +129,14 @@ body {
   padding: 10px;
 }
 
+.underline {
+  color: var(--red);
+  width: 50px;
+  border: 1px solid red;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+
 .event-schedule {
   margin-top: 20px;
 }
@@ -113,16 +147,18 @@ body {
 }
 
 .main-program {
-  text-align: center;
-  margin-top: 200px;
-  background: var(--main-color);
-  padding: 30px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  margin-top: 200px;
+  background: var(--main-color);
+  justify-content: center;
+  padding-bottom: 100px;
 }
 
 .main-program h2 {
   color: var(--white);
+  margin-bottom: 30px;
 }
 
 .programs {
@@ -143,11 +179,6 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.program-card img {
-  height: 96px;
-  width: 90px;
-}
-
 .program-card h2 {
   color: var(--red);
 }
@@ -155,7 +186,7 @@ body {
 .program-card p {
   color: var(--white);
   font-size: 16px;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: bold;
   line-height: 1.2;
   backdrop-filter: blur(8px);
@@ -164,15 +195,25 @@ body {
 /* Featured speaker */
 
 .speaker {
-  margin-top: 120px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.speaker h2 {
+  margin: 20px;
 }
 
 .speaker-row {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 20px;
+}
+
+.speaker-row-dynamic {
+  display: flex;
+  flex-direction: column;
 }
 
 .organizer1 {
@@ -200,14 +241,12 @@ body {
 }
 
 .partners {
-  text-align: center;
   background: var(--black);
-  height: 200px;
-  margin: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-bottom: 100px;
 }
 
 .partners .our-partners {
@@ -225,19 +264,38 @@ body {
 footer {
   display: flex;
   align-items: center;
-  margin-top: 20px;
   background: var(--white);
   width: 100%;
-  height: 100px;
+  margin-top: 200px;
+  justify-content: center;
 }
 
-footer img {
-  height: 40px;
-  margin-top: 20px;
+.footer-p {
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 @media screen and (min-width: 768px) {
+  .header {
+    background: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    padding-right: 30px;
+  }
+
   .navbar i {
+    display: none;
+  }
+
+  .mobile-menu {
     display: none;
   }
 
@@ -268,6 +326,11 @@ footer img {
     padding: 10px;
   }
 
+  footer img {
+    height: 40px;
+    margin-top: 40px;
+  }
+
   .program-card img {
     height: 16px;
     width: 16px;
@@ -283,10 +346,18 @@ footer img {
   .speaker-row {
     display: flex;
     flex-direction: row;
+    gap: 20px;
+    width: 50%;
   }
 
-  .speaker {
-    display: grid;
-    grid-template-columns: 50%;
+  .speaker-row-dynamic {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .footer-p {
+    margin-top: 20px;
+    align-items: center;
   }
 }
