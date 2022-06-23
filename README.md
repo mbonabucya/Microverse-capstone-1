@@ -32,7 +32,7 @@ The Meeting Was Originally Scheduled For 26–27 June 2020 Preceded By Various F
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://mbonabucya.github.io/Microverse-capstone-1/)
 
 ## Getting Started
 
@@ -46,7 +46,7 @@ To get a local copy for this project and running follow these simple steps.
 
 ### Setup
 
-- To clone the repository run this command `https://github.com/GOlivierNation/capstone-project-one.git`
+- To clone the repository run this command `https://github.com/mbonabucya/Microverse-capstone-1.git`
 
 ## Test
 
