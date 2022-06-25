@@ -37,9 +37,11 @@ body {
   background: var(--blueish);
   visibility: hidden;
 }
-.desktop  {
+
+.desktop {
   display: none;
 }
+
 .mobile-menu a {
   color: var(--white);
   font-size: 24px;
@@ -49,8 +51,6 @@ body {
 footer img {
   height: 40px;
   margin-top: 40px;
-  
-  
 }
 
 #menu {
@@ -149,26 +149,26 @@ footer img {
   align-items: center;
 }
 
-.history .last-meetings  img {
+.history .last-meetings img {
   height: 180px;
   width: 300px;
 }
 
 .image-2022 {
-background: linear-gradient(rgba(255,0,0,0.5),rgba(255,0,0,0.3)),url(/images/chogm-22.jpeg);
-height: 180px;
-width: 300px;
-color: white;
-display: flex;
-align-items: center;
-justify-content: center;
-font-size: large;
-font-weight: bold;
-background-repeat: no-repeat;
+  background: linear-gradient(rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 0.3)), url(/images/chogm-22.jpeg);
+  height: 180px;
+  width: 300px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: large;
+  font-weight: bold;
+  background-repeat: no-repeat;
 }
 
 .image-2018 {
-  background: linear-gradient(rgba(255,0,0,0.7),rgba(255,0,0,0.4)),url(/images/chogm2018.jpeg);
+  background: linear-gradient(rgba(255, 0, 0, 0.7), rgba(255, 0, 0, 0.4)), url(/images/chogm2018.jpeg);
   height: 180px;
   width: 300px;
   color: white;
@@ -179,13 +179,12 @@ background-repeat: no-repeat;
   font-weight: bold;
   background-repeat: no-repeat;
   background-size: cover;
-  }
+}
 
-  .year {
-    font-size: 40px;
-    margin-left: 50px;
-
-  }
+.year {
+  font-size: 40px;
+  margin-left: 50px;
+}
 
 footer {
   display: flex;
@@ -206,14 +205,13 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
-
-
   .head {
     position: fixed;
     width: 100%;
     background: var(--white);
     height: 100px;
   }
+
   .about-header {
     margin-top: 180px;
     margin-left: 120px;
@@ -229,11 +227,10 @@ footer {
     margin-right: 20px;
     margin-top: 20px;
   }
+
   .mobile {
     display: none;
   }
-
- 
 
   .desktop {
     display: flex;
@@ -242,7 +239,7 @@ footer {
 
   .media {
     display: flex;
-    gap:20px ;
+    gap: 20px;
     background-color: var(--black);
     width: 100%;
     padding: 5px;
@@ -256,18 +253,28 @@ footer {
     font-size: 18px;
   }
 
-  .media a:hover
+  .navigation-bar nav a {
+    color: var(--main-color);
+    font-size: 20px;
+    margin-right: 40px;
+    font-weight: bold;
+  }
 
-  {
+  .media a:hover {
     text-decoration: none;
   }
-  
+
+  .media a:active {
+    color: var(--secondary);
+  }
+
   nav {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-left: 40px;
   }
+
   .navigation-bar {
     display: flex;
     flex-direction: row;
@@ -277,18 +284,10 @@ footer {
   }
 
   .navigation-bar img {
-      height: 35px;
-  }
- 
-  .navigation-bar nav a {
-    color: var(--main-color);
-    font-size: 20px;
-    margin-right: 40px;
-    font-weight: bold;
+    height: 35px;
   }
 
-  .navigation-bar nav a:hover
-  {
+  .navigation-bar nav a:hover {
     color: var(--secondary);
     text-decoration: none;
   }
@@ -298,13 +297,15 @@ footer {
     padding: 5px;
     margin-left: 140px;
   }
-  .navigation-bar #campaign a{
+
+  .navigation-bar #campaign a {
     color: var(--red);
   }
 
   footer {
-    background-color:var(--black)
+    background-color: var(--black);
   }
+
   .footer-p {
     color: var(--white);
   }

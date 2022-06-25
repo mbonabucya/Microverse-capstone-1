@@ -26,14 +26,16 @@
   top: 0;
 }
 
-.desktop  {
+.desktop {
   display: none;
 }
+
 body {
   background-image: url(../images/main-img.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .mobile-menu {
   background: var(--blueish);
   visibility: hidden;
@@ -54,7 +56,7 @@ body {
   margin-top: 30px;
   margin-right: 40px;
   padding-right: 40px;
-} 
+}
 
 #menu {
   color: var(--blueish);
@@ -199,6 +201,10 @@ body {
   backdrop-filter: blur(8px);
 }
 
+#see-more {
+  color: white;
+}
+
 /* Featured speaker */
 
 .speaker {
@@ -295,6 +301,7 @@ footer {
     height: 100px;
     top: 0;
   }
+
   .mobile {
     display: none;
   }
@@ -306,7 +313,7 @@ footer {
 
   .media {
     display: flex;
-    gap:20px ;
+    gap: 20px;
     background-color: var(--black);
     width: 100%;
     padding: 5px;
@@ -320,18 +327,24 @@ footer {
     font-size: 18px;
   }
 
-  .media a:hover
+  .navigation-bar nav a {
+    color: var(--main-color);
+    font-size: 20px;
+    margin-right: 40px;
+    font-weight: bold;
+  }
 
-  {
+  .media a:hover {
     text-decoration: none;
   }
-  
+
   nav {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-left: 40px;
   }
+
   .navigation-bar {
     display: flex;
     flex-direction: row;
@@ -340,19 +353,16 @@ footer {
     justify-content: center;
   }
 
-  .navigation-bar img {
-      height: 35px;
-  }
- 
-  .navigation-bar nav a {
-    color: var(--main-color);
-    font-size: 20px;
-    margin-right: 40px;
-    font-weight: bold;
+  footer img {
+    height: 40px;
+    margin-top: 40px;
   }
 
-  .navigation-bar nav a:hover
-  {
+  .navigation-bar img {
+    height: 35px;
+  }
+
+  .navigation-bar nav a:hover {
     color: var(--secondary);
     text-decoration: none;
   }
@@ -362,10 +372,10 @@ footer {
     padding: 5px;
     margin-left: 140px;
   }
-  .navigation-bar #campaign a{
+
+  .navigation-bar #campaign a {
     color: var(--red);
   }
-
 
   .programs {
     display: flex;
@@ -394,11 +404,6 @@ footer {
     padding: 10px;
   }
 
-  footer img {
-    height: 40px;
-    margin-top: 40px;
-  }
-
   .program-card img {
     height: 16px;
     width: 16px;
@@ -423,6 +428,7 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
   }
+
   footer {
     display: flex;
     flex-direction: row;
@@ -433,6 +439,7 @@ footer {
     justify-content: center;
     gap: 20px;
   }
+
   .footer-p {
     margin-top: 20px;
     align-items: center;
