@@ -18,25 +18,22 @@
   padding: 0;
 }
 
+.head {
+  position: fixed;
+  width: 100%;
+  background: var(--white);
+  height: 50px;
+  top: 0;
+}
+
+.desktop  {
+  display: none;
+}
 body {
   background-image: url(../images/main-img.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
-
-.header {
-  background: var(--white);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-left: 10px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 40px;
-}
-
 .mobile-menu {
   background: var(--blueish);
   visibility: hidden;
@@ -62,6 +59,8 @@ body {
 #menu {
   color: var(--blueish);
   font-size: 30px;
+  margin-left: 10px;
+  margin-top: 5px;
 }
 
 .program-card img {
@@ -287,27 +286,84 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
-  .header {
+  .head {
+    position: fixed;
+    width: 100%;
     background: var(--white);
+    height: 100px;
+    top: 0;
+  }
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .media {
+    display: flex;
+    gap:20px ;
+    background-color: var(--black);
+    width: 100%;
+    padding: 5px;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-right: 400px;
+  }
+
+  .media a {
+    color: var(--white);
+    font-size: 18px;
+  }
+
+  .media a:hover
+
+  {
+    text-decoration: none;
+  }
+  
+  nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding-left: 10px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 70px;
-    padding-right: 30px;
+    justify-content: center;
+    margin-left: 40px;
+  }
+  .navigation-bar {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
   }
 
-  .navbar i {
-    display: none;
+  .navigation-bar img {
+      height: 35px;
+  }
+ 
+  .navigation-bar nav a {
+    color: var(--main-color);
+    font-size: 20px;
+    margin-right: 40px;
+    font-weight: bold;
   }
 
-  .mobile-menu {
-    display: none;
+  .navigation-bar nav a:hover
+  {
+    color: var(--secondary);
+    text-decoration: none;
   }
+
+  #campaign {
+    border: 2px solid var(--red);
+    padding: 5px;
+    margin-left: 140px;
+  }
+  .navigation-bar #campaign a{
+    color: var(--red);
+  }
+
 
   .programs {
     display: flex;

@@ -20,30 +20,26 @@
   overflow-x: hidden;
 }
 
+.head {
+  position: fixed;
+  width: 100%;
+  background: var(--white);
+  height: 50px;
+}
+
 body {
   background-image: url(../images/main-img.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.header {
-  background: var(--white);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-left: 10px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 100px;
-}
-
 .mobile-menu {
   background: var(--blueish);
   visibility: hidden;
 }
-
+.desktop  {
+  display: none;
+}
 .mobile-menu a {
   color: var(--white);
   font-size: 24px;
@@ -60,15 +56,13 @@ footer img {
 #menu {
   color: var(--blueish);
   font-size: 30px;
+  margin-left: 10px;
+  margin-top: 5px;
 }
 
 .logo-design img {
   border: 1px solid var(--back);
   margin-top: 40px;
-}
-
-.header .logo img {
-  height: 30px;
 }
 
 .underline {
@@ -84,33 +78,6 @@ footer img {
   margin-bottom: 20px;
   margin-top: 30px;
   font-size: 18px;
-}
-.header .navbar a {
-  margin: 20px;
-  font-size: 16px;
-  color: var(--main-color);
-}
-
-.header .campaign a {
-  color: var(--red);
-  font-weight: bolder;
-}
-
-.header .navbar a:hover {
-  color: var(--red);
-  text-decoration: none;
-}
-
-.header .logo,
-.navbar,
-.campaign {
-  display: none;
-}
-
-.header .campaign {
-  border: 2px solid var(--red);
-  padding: 5px;
-  margin-right: 45px;
 }
 
 #closeMenu {
@@ -185,9 +152,6 @@ footer img {
 .history .last-meetings  img {
   height: 180px;
   width: 300px;
-
-
-
 }
 
 .image-2022 {
@@ -217,14 +181,10 @@ background-repeat: no-repeat;
   background-size: cover;
   }
 
-   .year {
+  .year {
     font-size: 40px;
     margin-left: 50px;
 
-  }
-
-  .social_media {
-    display: none;
   }
 
 footer {
@@ -249,41 +209,14 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
-  .header {
-    background: var(--white);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 10px;
+
+
+  .head {
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 70px;
+    width: 100%;
+    background: var(--white);
+    height: 100px;
   }
-
-  .navbar {
-    margin-top: 20px;
-  }
-
-  .navbar i {
-    display: none;
-  }
-
-  .header .icons #menu {
-    display: none;
-  }
-
-  .header .logo,
-  .navbar,
-  .campaign {
-    display: flex;
-  }
-
-  .campaign {
-    margin-top: 20px;
-  }
-
   .about-header {
     margin-top: 180px;
     margin-left: 120px;
@@ -299,9 +232,77 @@ footer {
     margin-right: 20px;
     margin-top: 20px;
   }
-
-  .mobile-menu {
+  .mobile {
     display: none;
+  }
+
+ 
+
+  .desktop {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .media {
+    display: flex;
+    gap:20px ;
+    background-color: var(--black);
+    width: 100%;
+    padding: 5px;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-right: 400px;
+  }
+
+  .media a {
+    color: var(--white);
+    font-size: 18px;
+  }
+
+  .media a:hover
+
+  {
+    text-decoration: none;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+  }
+  .navigation-bar {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navigation-bar img {
+      height: 35px;
+  }
+ 
+  .navigation-bar nav a {
+    color: var(--main-color);
+    font-size: 20px;
+    margin-right: 40px;
+    font-weight: bold;
+  }
+
+  .navigation-bar nav a:hover
+  {
+    color: var(--secondary);
+    text-decoration: none;
+  }
+
+  #campaign {
+    border: 2px solid var(--red);
+    padding: 5px;
+    margin-left: 140px;
+  }
+  .navigation-bar #campaign a{
+    color: var(--red);
   }
 
   footer {
@@ -310,25 +311,4 @@ footer {
   .footer-p {
     color: var(--white);
   }
-
-  .social_media {
-    display: flex;
-    flex-direction:column ;
-    
-    width: 100%;
-    position: fixed;
-    top: 0;
-
-  }
-
-  .media-nav {
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    gap: 20px;
-    padding-right: 20px;
-    background-color: black;
-    width: 100%;
-
-}
 }
