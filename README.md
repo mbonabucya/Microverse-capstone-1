@@ -77,7 +77,7 @@ For tracking linter errors locally you need to follow these steps:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/mbonabucya/Microverse-capstone-1/issues).
 
 ## Show your support
 

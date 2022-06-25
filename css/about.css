@@ -7,6 +7,7 @@
   --blueish: #172b4d;
   --red: #ec5242;
   --back: #d3d3d3;
+  --secondary: #ec5242;
 }
 
 * {
@@ -35,7 +36,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  height: 40px;
+  height: 100px;
 }
 
 .mobile-menu {
@@ -52,6 +53,13 @@ body {
 footer img {
   height: 40px;
   margin-top: 40px;
+  
+  
+}
+
+#menu {
+  color: var(--blueish);
+  font-size: 30px;
 }
 
 .logo-design img {
@@ -63,6 +71,20 @@ footer img {
   height: 30px;
 }
 
+.underline {
+  color: var(--red);
+  width: 50px;
+  border: 1px solid red;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+
+.history .past-meetings {
+  color: #13131a;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  font-size: 18px;
+}
 .header .navbar a {
   margin: 20px;
   font-size: 16px;
@@ -87,7 +109,7 @@ footer img {
 
 .header .campaign {
   border: 2px solid var(--red);
-  padding: 15px;
+  padding: 5px;
   margin-right: 45px;
 }
 
@@ -160,19 +182,70 @@ footer img {
   align-items: center;
 }
 
+.history .last-meetings  img {
+  height: 180px;
+  width: 300px;
+
+
+
+}
+
+.image-2022 {
+background: linear-gradient(rgba(255,0,0,0.5),rgba(255,0,0,0.3)),url(/images/chogm-22.jpeg);
+height: 180px;
+width: 300px;
+color: white;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: large;
+font-weight: bold;
+background-repeat: no-repeat;
+}
+
+.image-2018 {
+  background: linear-gradient(rgba(255,0,0,0.7),rgba(255,0,0,0.4)),url(/images/chogm2018.jpeg);
+  height: 180px;
+  width: 300px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: large;
+  font-weight: bold;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+
+   .year {
+    font-size: 40px;
+    margin-left: 50px;
+
+  }
+
+  .social_media {
+    display: none;
+  }
+
 footer {
   display: flex;
+  flex-direction: row;
+  gap: 20px;
   align-items: center;
   background: var(--white);
   width: 100%;
   margin-top: 200px;
   justify-content: center;
+
+  
 }
 
 .footer-p {
   margin-top: 40px;
   margin-left: 20px;
   margin-right: 20px;
+  width: 50%;
+
 }
 
 @media screen and (min-width: 768px) {
@@ -189,6 +262,10 @@ footer {
     height: 70px;
   }
 
+  .navbar {
+    margin-top: 20px;
+  }
+
   .navbar i {
     display: none;
   }
@@ -201,6 +278,10 @@ footer {
   .navbar,
   .campaign {
     display: flex;
+  }
+
+  .campaign {
+    margin-top: 20px;
   }
 
   .about-header {
@@ -222,4 +303,32 @@ footer {
   .mobile-menu {
     display: none;
   }
+
+  footer {
+    background-color:var(--black)
+  }
+  .footer-p {
+    color: var(--white);
+  }
+
+  .social_media {
+    display: flex;
+    flex-direction:column ;
+    
+    width: 100%;
+    position: fixed;
+    top: 0;
+
+  }
+
+  .media-nav {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 20px;
+    padding-right: 20px;
+    background-color: black;
+    width: 100%;
+
+}
 }
