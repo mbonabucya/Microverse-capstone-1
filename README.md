@@ -30,9 +30,13 @@ The Meeting Was Originally Scheduled For 26–27 June 2020 Preceded By Various F
 - Git & GitHub
 
 
-## Live Demo
+## Live Demo Link
 
 [Live Demo Link](https://mbonabucya.github.io/Microverse-capstone-1/)
+
+## Live Demo Video
+
+[Live Demo Video] (https://www.loom.com/share/e1d5d0c1844a402eb3c4fb5deed9ae78)
 
 ## Getting Started
 
